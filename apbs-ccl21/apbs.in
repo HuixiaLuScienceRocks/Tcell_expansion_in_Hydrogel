@@ -1,0 +1,30 @@
+read
+  mol pqr step1_pdbreader.pqr
+end
+elec
+  mg-auto
+  dime 129 129 129
+  cglen 132.00000286102295 77.4060001373291 100.28250217437744
+  cgcent mol 1
+  fglen 132.00000286102295 77.4060001373291 100.28250217437744
+  fgcent mol 1
+  mol 1
+  npbe
+  bcfl sdh
+  srfm smol
+  chgm spl2
+  ion 1 0.150 2.0
+  ion -1 0.150 2.0
+  pdie  1.0
+  sdie  78.54
+  sdens  10.0
+  srad  1.4
+  swin  0.3
+  temp  298.15
+  gamma  0.105
+  calcenergy no
+  calcforce no
+  write charge dx charge
+  write pot dx pot
+end
+quit
